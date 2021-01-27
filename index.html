@@ -10,13 +10,15 @@
         <title>Slider</title>
     </head>
     <body>
+
+      <div id="app">
         <div class="container">
             <div class="slider-wrapper">
                 <div class="prev">
                     <i class="fas fa-angle-left"></i>
                 </div>
                 <div class="images">
-                    <img v-bind:src="images" class="active first" alt="">
+                    <img v-bind:src="picture">
                     <img src="https://static.photocdn.pt/images/articles/2017/04/28/iStock-646511634.jpg" alt="">
                     <img src="https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg" alt="">
                     <img class="last" src="https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg" alt="">
@@ -32,6 +34,8 @@
                 </div>
             </div>
         </div>
+      </div>
+
 
         <script src="main.js"></script>
     </body>
