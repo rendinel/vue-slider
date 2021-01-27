@@ -8,6 +8,7 @@ var app = new Vue({
      'https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg'
    ],
    pictureIDX: 0,
+   color:'blue',
 
  },
  methods: {
@@ -16,6 +17,11 @@ var app = new Vue({
    },
    previous: function() {
        this.pictureIDX -= 1;
+   }
+   first: function() {
+     if (true) {
+
+     }
    }
   }
 });
