@@ -7,22 +7,30 @@ var app = new Vue({
      'https://cdn.mos.cms.futurecdn.net/FUE7XiFApEqWZQ85wYcAfM.jpg',
      'https://static.photocdn.pt/images/articles/2017/04/28/iStock-546424192.jpg'
    ],
+   icons:[
+     'fas fa-circle',
+     'fas fa-circle',
+     'fas fa-circle',
+     'fas fa-circle'
+   ],
+   iconsIDX: 0,
    pictureIDX: 0,
-   color:'blue',
-
+   colore:'blue',
  },
  methods: {
    nexts: function() {
        this.pictureIDX += 1;
+       if (this.pictureIDX > (this.picture.length - 1) ) {
+           this.pictureIDX = 0;
+       }
    },
    previous: function() {
        this.pictureIDX -= 1;
+       if (this.pictureIDX < 0) {
+         this.pictureIDX = this.picture.length - 1 ;
+         // this.pictureIDX = 3 ; sono equivalenti
+       }
+   },
    }
-   first: function() {
-     if (true) {
-
-     }
-   }
-  }
 });
 Vue.config.devtools = true;
